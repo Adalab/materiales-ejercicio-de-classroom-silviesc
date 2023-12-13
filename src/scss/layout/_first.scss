@@ -10,6 +10,9 @@
     align-items: center;
     text-align: center;
     padding: 38px;
+    @media (min-width: 768px) {
+        background-position-x: 25%;
+    }
     & h1 {
         font-family: $title;
         font-size: $xxl;
@@ -17,12 +20,21 @@
         color: $white;
         text-transform: uppercase;
         padding-left: 5px;
+        line-height: 1.67;
+        @media (min-width: 768px) {
+            font-size: $bigTablet;
+        }
     }
     & p {
         font-family: $text;
         font-size: $s;
         color: $white;
         padding: 10px 16px;
+        @media (min-width: 768px) {
+            font-size: $xl;
+            width: 28ch;
+            line-height: 1.17;
+        }
     }
     & figure {
         width: 38px;
@@ -31,6 +43,13 @@
         border-radius: 50%;
         & img {
             transform: translateY(11px);
+            @media (min-width: 768px) {
+                transform: translateY(15px);
+            }
+        }
+        @media (min-width: 768px) {
+            width: 42.5px;
+            height: 45px;
         }
     }
 }

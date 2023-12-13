@@ -1,31 +1,52 @@
 .third {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-items: center;
     padding: 0 15px 0 15px;
     text-align: center;
     gap: 41px;
     background-color: $light_gray;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 38px;
+    }
     &__h2 {
         font-family: $title;
         font-size: $l;
         line-height: 1.5;
         width: 20ch;
         padding-top: 29px;
-        margin: 0;
+        @media (min-width: 768px) {
+            grid-column: 1/4;
+            font-size: $smallTablet;
+            width: 40ch;
+            height: 45px;
+            padding-top: 49px;
+        }
     }
     &__article {
         width: 25ch;
         line-height: 1.67;
+        @media (min-width: 768px) {
+            padding-bottom: 20px;
+        }
         &--h3 {
             font-family: $title;
             color: $black;
             font-size: $m;
+            @media (min-width: 768px) {
+                font-size: $xl;
+                padding-bottom: 18px;
+            }
         }
         &--p {
             font-family: $text;
             color: $black;
             font-size: $m;
+            @media (min-width: 768px) {
+                font-size: $l;
+            }
         }
     }
     &__button {
@@ -42,6 +63,9 @@
             font-family: $text;
             font-size: $l;
             color: $white;
+        }
+        @media (min-width: 768px) {
+            grid-column: 1/4;
         }
     }
 }

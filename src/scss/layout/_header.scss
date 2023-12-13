@@ -10,4 +10,12 @@
         width: 13.5 px;
         height: 11.1 px;
     }
+    @media (min-width: 768px) {
+        width: 41.6px;
+        height: 44px;
+    }
+    @media (min-width: 1024px) {
+        width: 45.1px;
+        height: 44.9px;
+    }
 }
