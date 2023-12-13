@@ -4,8 +4,19 @@
   align-items: center;
   text-align: center;
   background-color: $dark_gray;
-  padding: 65px 109px 36px 108px;
+  padding: 10px 109px 36px 108px;
   gap: 30px;
+  &__arrow {
+    background-color: $white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translateY(-30px);
+    & img {
+      position: relative;
+      top: 10px;
+    }
+  }
   &__menu {
     list-style: none;
     text-transform: uppercase;
