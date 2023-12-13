@@ -1,0 +1,14 @@
+.menu {
+    width: 37px;
+    height: 34px;
+    background: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /*comprobar que funciona el fixed*/
+    & img {
+        width: 13.5 px;
+        height: 11.1 px;
+    }
+}

@@ -1,0 +1,36 @@
+.first {
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 38px;
+    & h1 {
+        font-family: $title;
+        font-size: $xxl;
+        font-weight: bold;
+        color: $white;
+        text-transform: uppercase;
+        padding-left: 5px;
+    }
+    & p {
+        font-family: $text;
+        font-size: $s;
+        color: $white;
+        padding: 10px 16px;
+    }
+    & figure {
+        width: 38px;
+        height: 36px;
+        background-color: $white;
+        border-radius: 50%;
+        & img {
+            transform: translateY(11px);
+        }
+    }
+}
